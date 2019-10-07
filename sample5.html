@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {margin:0; padding:0;} /*실제 제작에서는 많이 쓰지는 않는다*/
+
+    #wrap { text-align: center; color:#fff; text-transform: uppercase;}
+    #header-wrap{ width:100%; height: 100px; background-color: #8d6e80;}
+    #banner-wrap{ width:100%; height: 300px; background-color: #8d6e63;}
+    #content-wrap{ width:100%; height: 500px; background-color: #bcaaa4;}
+    #footer-wrap{ width:100%; height: 100px; background-color: #d7ccc8;}
+  /* 원래는 height의 값이 부모와 자식이 같으니까 부모의 height값을 지워도 자식이 인식하고있으니까 지울수있음*/
+    .header-container{ width: 1000px; height: 100px; margin:0 auto;background-color: #3e2723;}
+    .banner-container{ width: 1000px; height: 300px; margin:0 auto;background-color: #4e342e;}
+    .content-container{ width: 1000px; height: 500px; margin:0 auto;background-color: #5d4037;}
+    .footer-container{ width: 1000px; height: 100px;  margin:0 auto; background-color: #6d4c41; }
+
+  /* block 구조를 가운데 정렬하려면 margin을 0을주면 된다 */
+
+  </style>
+</head>
+<body>
+  <div id="wrap">
+          <div id="header-wrap">
+             <div class="header-container"> header</div> <!-- .header-wrap tap 을 누르면 이 줄이 알아서 작성된다 -->
+           </div>
+          <div id="banner-wrap">
+             <div class="banner-container"> banner</div>
+          </div>
+          <div id="content-wrap">
+             <div class="content-container"> content</div>
+          </div>
+          <div id="footer-wrap">
+             <div class="footer-container"> footer</div>
+          </div>
+  </div>
+</body>
+</html>
